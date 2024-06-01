@@ -42,7 +42,7 @@ export default async function handler(
             // Update the data
             query = createUpSertQuery("users",
                 ["uid", "updatedAt", "level", "exp", "rexp", "totalPlays", "totalKills", "spentCash", "kills"],
-                [userid, new Date().toISOString().slice(0, 19).replace('T', ' '), level, exp, rexp, totalPlays, totalKills, spentCash, kills]
+                [userid, new Date().toISOString().slice(0, 19).replace('T', ' '), level, exp, rexp, totalPlays, totalKills, spentCash, JSON.stringify(kills)]
                 )
 
             break;
