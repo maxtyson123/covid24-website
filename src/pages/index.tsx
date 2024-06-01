@@ -19,7 +19,7 @@ export default function Home() {
           <div className="wrapper">
               <h1 title="Covid 24 Co-Op">Covid 24 Co-Op</h1>
               <h2 title="COMING SOoN">COMING SOoN</h2>
-              <button className={"download"}>Download Beta</button>
+              <a className={"download"} href={"https://dl.patchkit.net/d/3ph79bq0ariy8ouua1isa/direct"} target="_blank">Download Beta</a>
           </div>
       </main>
     </>
