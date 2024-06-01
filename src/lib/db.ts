@@ -3,7 +3,7 @@ import axios from "axios";
 const sqlDb = require('mysql2-async').default;
 
 export async function GetUserID(req: NextApiRequest, res: NextApiResponse): Promise<any> {
-    const token = "Bearer ZDFINTI2NGETMJNKNI0ZZTC3LTK4NTETZMQXOTC5OWNLYWY3"; //req.headers.authorization;
+    const token = req.headers.authorization;
     if (!token) {
         res.status(401).json({message: "Unauthorized"});
         return;
