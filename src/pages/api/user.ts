@@ -10,6 +10,7 @@ export default async function handler(
 
     // Get the user ID
     const userid = await GetUserID(req, res);
+    console.log(userid)
 
     // Connect to the DB
     const client = await getClient();
